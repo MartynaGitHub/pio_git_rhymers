@@ -49,7 +49,4 @@ public class IntLinkedList {
         return i;
     }
 
-    private void setI(int i) {
-        this.i = i;
-    }
 }
