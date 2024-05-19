@@ -6,8 +6,8 @@ import edu.kis.vh.nursery.factory.RhymersFactory;
 class RhymersDemo {
 
     public static void main(String[] args) {
-        int LOOP_INDEX_i = 15;
-        int LOOP_INDEX_j = 3;
+        final int LOOP_INDEX_i = 15;
+        final int LOOP_INDEX_j = 3;
         RhymersFactory factory = new DefaultRhymersFactory();
         
         DefaultCountingOutRhymer[] rhymers = { factory.getStandardRhymer(), factory.getFalseRhymer(),
