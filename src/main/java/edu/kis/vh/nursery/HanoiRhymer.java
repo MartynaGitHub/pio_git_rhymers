@@ -7,6 +7,8 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
     protected int reportRejected() {
         return totalRejected;
     }
+
+    //TODO : Add comments about login in rejecting values
     @Override
     public void countIn(int in) {
         if (!callCheck() && in > peekaboo())
