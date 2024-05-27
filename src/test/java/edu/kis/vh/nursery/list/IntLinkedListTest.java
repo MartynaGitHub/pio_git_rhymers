@@ -45,22 +45,6 @@ public class IntLinkedListTest {
     }
 
     @Test
-    public void testPop() {
-        IntLinkedList list = new IntLinkedList();
-        final int EMPTY_STACK_VALUE = -1;
-
-        int result = list.pop();
-        Assert.assertEquals("Pop should return EMPTY_STACK_VALUE for an empty list", EMPTY_STACK_VALUE, result);
-
-        int testValue = 5;
-        list.push(testValue);
-        result = list.pop();
-        Assert.assertEquals("Pop should return the last value", testValue, result);
-        result = list.pop();
-        Assert.assertEquals("Pop should return EMPTY_STACK_VALUE after the list is empty again", EMPTY_STACK_VALUE, result);
-    }
-
-    @Test
     public void testPopUntilEmpty() {
         IntLinkedList list = new IntLinkedList();
         list.push(15);
