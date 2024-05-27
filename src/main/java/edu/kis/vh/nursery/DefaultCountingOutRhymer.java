@@ -7,7 +7,7 @@ public class DefaultCountingOutRhymer {
     private final int[] numbers = new int[CAPACITY];
     
     private int total = EMPTY;
-
+    //TODO : Consider using the CAPACITY value instead of total
     public void countIn(int in) {
         if (!isFull())
             numbers[++total] = in;
@@ -21,6 +21,7 @@ public class DefaultCountingOutRhymer {
         return total == EMPTY;
     }
 
+    // TODO : Verify value with CAPACITY
     public boolean isFull() {
         return total == FULL;
     }

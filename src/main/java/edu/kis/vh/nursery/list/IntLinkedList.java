@@ -6,7 +6,7 @@ package edu.kis.vh.nursery.list;
 public class IntLinkedList {
     private static final int EMPTY_VAL = -1;
     protected Node last;
-    private int i;
+    private int i; // TODO : Remove unused variable i
 
     /**
      * Pushes a new integer onto the top of the linked list.
@@ -14,6 +14,7 @@ public class IntLinkedList {
      * @param i the integer to be pushed onto the list.
      */
     public void push(int i) {
+        // TODO : Optimize operation to the 'last' variable
         if (getLast() == null)
             setLast(new Node(i));
         else {
@@ -89,6 +90,7 @@ public class IntLinkedList {
      *
      * @return the value of i.
      */
+    // TODO : remove unused method
     private int getI() {
         return i;
     }

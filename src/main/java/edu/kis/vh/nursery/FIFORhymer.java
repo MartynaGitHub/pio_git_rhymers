@@ -3,7 +3,7 @@ package edu.kis.vh.nursery;
 public class FIFORhymer extends DefaultCountingOutRhymer {
 
     private final DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
-
+    //TODO : Consider changing logic in FIFO implementation
     @Override
     public int countOut() {
         while (!callCheck())
